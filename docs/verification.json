@@ -1,0 +1,183 @@
+{
+  "checkedAt": "2026-10-27T15:52:47.886Z",
+  "node": "v24.14.1",
+  "model": "onnx-community/tinyroberta-squad2-ONNX",
+  "revision": "7c9f69b7e6228375169a4553bcfa6639152e3a69",
+  "runtime": "CPU, in-process ONNX worker; remote model access disabled",
+  "realInference": true,
+  "apiKeyRequired": false,
+  "cases": [
+    {
+      "name": "Recorded closing date",
+      "question": "When was the final day of service at Bellwether post office?",
+      "passed": true,
+      "status": 200,
+      "reading": {
+        "title": "A passage to return to",
+        "reading": "The on-device model selected “31 October 1997” from this fragment. Read the surrounding quotation before treating it as an answer.",
+        "evidence": [
+          {
+            "sourceId": "F05",
+            "quote": "Final day of service: 31 October 1997."
+          }
+        ],
+        "uncertainty": "This is an extractive reading: the model selects existing words, rather than writing a new story. The quoted text is verified, but its relevance to the question still needs your judgment.",
+        "mode": "local",
+        "model": "onnx-community/tinyroberta-squad2-ONNX",
+        "provider": null,
+        "durationMs": 6102,
+        "usage": null,
+        "retrieved": [
+          {
+            "id": "F05",
+            "score": 7.701
+          },
+          {
+            "id": "F02",
+            "score": 2.844
+          },
+          {
+            "id": "F03",
+            "score": 0.689
+          },
+          {
+            "id": "F01",
+            "score": 0
+          },
+          {
+            "id": "F04",
+            "score": 0
+          },
+          {
+            "id": "F06",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Recorded key holder",
+      "question": "Who would hold the key to the reading room?",
+      "passed": true,
+      "status": 200,
+      "reading": {
+        "title": "A passage to return to",
+        "reading": "The on-device model selected “night librarian” from this fragment. Read the surrounding quotation before treating it as an answer.",
+        "evidence": [
+          {
+            "sourceId": "F05",
+            "quote": "A key will be held by the night librarian."
+          }
+        ],
+        "uncertainty": "This is an extractive reading: the model selects existing words, rather than writing a new story. The quoted text is verified, but its relevance to the question still needs your judgment.",
+        "mode": "local",
+        "model": "onnx-community/tinyroberta-squad2-ONNX",
+        "provider": null,
+        "durationMs": 553,
+        "usage": null,
+        "retrieved": [
+          {
+            "id": "F05",
+            "score": 3.906
+          },
+          {
+            "id": "F02",
+            "score": 0.716
+          },
+          {
+            "id": "F01",
+            "score": 0.64
+          },
+          {
+            "id": "F03",
+            "score": 0
+          },
+          {
+            "id": "F04",
+            "score": 0
+          },
+          {
+            "id": "F06",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Fresh fictional collection",
+      "question": "What did Amara keep in the blue tin?",
+      "passed": true,
+      "status": 200,
+      "reading": {
+        "title": "A passage to return to",
+        "reading": "The on-device model selected “her grandmother’s handwritten recipes” from this fragment. Read the surrounding quotation before treating it as an answer.",
+        "evidence": [
+          {
+            "sourceId": "F01",
+            "quote": "Amara kept her grandmother’s handwritten recipes in a blue tin on the kitchen shelf."
+          }
+        ],
+        "uncertainty": "This is an extractive reading: the model selects existing words, rather than writing a new story. The quoted text is verified, but its relevance to the question still needs your judgment.",
+        "mode": "local",
+        "model": "onnx-community/tinyroberta-squad2-ONNX",
+        "provider": null,
+        "durationMs": 73,
+        "usage": null,
+        "retrieved": [
+          {
+            "id": "F01",
+            "score": 2.108
+          },
+          {
+            "id": "F02",
+            "score": 0
+          }
+        ]
+      }
+    },
+    {
+      "name": "Unrecorded favourite song",
+      "question": "What was Nora’s favourite song?",
+      "passed": true,
+      "status": 200,
+      "reading": {
+        "title": "Some things are still quiet",
+        "reading": "The model did not return supporting quotations for this question. The archive has not established an answer.",
+        "evidence": [],
+        "uncertainty": "Try a more specific question or add another fragment. Absence of a citation does not prove the answer is absent.",
+        "mode": "local",
+        "model": "onnx-community/tinyroberta-squad2-ONNX",
+        "provider": null,
+        "durationMs": 371,
+        "usage": null,
+        "retrieved": [
+          {
+            "id": "F02",
+            "score": 0.716
+          },
+          {
+            "id": "F06",
+            "score": 0.702
+          },
+          {
+            "id": "F05",
+            "score": 0.669
+          },
+          {
+            "id": "F01",
+            "score": 0
+          },
+          {
+            "id": "F03",
+            "score": 0
+          },
+          {
+            "id": "F04",
+            "score": 0
+          }
+        ]
+      }
+    }
+  ],
+  "passed": true
+}

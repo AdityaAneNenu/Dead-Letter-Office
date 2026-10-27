@@ -1,0 +1,24 @@
+{
+  "name": "dead-letter-office",
+  "version": "1.0.0",
+  "private": true,
+  "description": "An archive of things left unsaid, with source-checked open-weight AI on your CPU. No API key required.",
+  "type": "module",
+  "engines": {
+    "node": ">=22.9"
+  },
+  "scripts": {
+    "start": "node --env-file-if-exists=.env server.mjs",
+    "dev": "node --env-file-if-exists=.env --watch server.mjs",
+    "test": "node --test test/*.test.mjs",
+    "check": "node scripts/check.mjs",
+    "test:browser": "node scripts/browser-smoke.cjs",
+    "setup:model": "node scripts/setup-model.mjs",
+    "verify:local": "node scripts/verify-local.mjs",
+    "demo:record": "node scripts/record-demo.cjs"
+  },
+  "license": "MIT",
+  "dependencies": {
+    "@huggingface/transformers": "4.3.1"
+  }
+}

@@ -1,0 +1,16 @@
+{
+  "id": "onnx-community/tinyroberta-squad2-ONNX",
+  "revision": "7c9f69b7e6228375169a4553bcfa6639152e3a69",
+  "upstream": "deepset/tinyroberta-squad2",
+  "license": "CC-BY-4.0",
+  "attribution": "tinyroberta-squad2 by deepset, ONNX conversion by the Hugging Face onnx-community. Quantized ONNX weights are used without fine-tuning.",
+  "source": "https://huggingface.co/onnx-community/tinyroberta-squad2-ONNX",
+  "files": [
+    { "path": "config.json", "size": 815, "gitBlob": "8ad86898ddadb24f164d41f8943f5e1246622a5d" },
+    { "path": "tokenizer.json", "size": 3558647, "gitBlob": "9ea94f7c863d744928853a0cef77f4c068fed4ac" },
+    { "path": "tokenizer_config.json", "size": 1250, "gitBlob": "be6375ea6d150bae5c1dfeb73d599cceab98b5af" },
+    { "path": "special_tokens_map.json", "size": 964, "gitBlob": "b1879d702821e753ffe4245048eee415d54a9385" },
+    { "path": "README.md", "size": 9944, "gitBlob": "696faf3f3c04ad504c10ccfb74ec6c31c3685cfc" },
+    { "path": "onnx/model_quantized.onnx", "size": 82141214, "sha256": "4db70e7a019e32bf652fb9d30a5c24d18b6949fae2f1dd00d9fe6d43052b77cd" }
+  ]
+}
